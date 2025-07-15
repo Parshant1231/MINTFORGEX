@@ -1,4 +1,4 @@
-# 🧠 MINTFORGEX
+<h1 align="center">🧠 MINTFORGEX</h1>
 
 **MINTFORGEX** is an AI-powered web app that helps content creators generate, structure, and remix short-form video ideas for platforms like **YouTube Shorts**, **Instagram Reels**, and **TikTok**.
 
@@ -89,7 +89,7 @@ GROQ_API_KEY=sk-your-groq-api-key-here
 
 ```
 
-### 3. 4. 🚀 Run the dev server
+### 4. 🚀 Run the dev server
 ```bash
 npm run dev
 
@@ -98,7 +98,7 @@ npm run dev
 Now open http://localhost:3000 in your browser.
 
 
-
+---
 
 ## 🙋 Author
 Made with [❤️](https://github.com/Parshant1231)!
@@ -108,9 +108,11 @@ Project:  MINTFORGEX
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
+---
+---
 <p align="center">
   <strong>⭐️ Show Your Support</strong><br/>
   If you found this project helpful, consider giving it a ⭐️ on GitHub!
 </p>
 
+---
