@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 MINTFORGEX
 
-## Getting Started
+**MINTFORGEX** is an AI-powered web app that helps content creators generate, structure, and remix short-form video ideas for platforms like **YouTube Shorts**, **Instagram Reels**, and **TikTok**.
 
-First, run the development server:
+Built with **Next.js App Router**, **TypeScript**, and **Groq's Mixtral AI**, this tool provides creative assistance using cutting-edge generative AI.
+
+---
+
+## 🚀 Features
+
+- 🎬 **Generate viral content ideas** by category or topic
+- 🛠️ **Structure story formats** with clear hooks, builds, and CTAs
+- 🎨 **Remix existing scripts** into new versions for multi-posting
+- 📈 **Explore trending topics** and AI-suggested variations
+- 🔥 Powered by **Groq + Mixtral-8x7B** for GPT-4-level performance at blazing speed
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+| Tool         | Description |
+|--------------|-------------|
+| **Next.js** ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) | A powerful full-stack React framework used for building modern, performant web applications. |
+| **TypeScript** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) | Provides static typing for JavaScript, improving code reliability and developer experience. |
+| **Tailwind CSS** ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white) | A utility-first CSS framework for building custom designs without writing CSS from scratch. |
+| **Groq AI** ![Groq](https://img.shields.io/badge/Groq_AI-000000?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMu%0D%0Ab3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=) | An ultra-fast LLM inference engine used to power real-time content generation. |
+| **Mixtral-8x7B** 🔮 | A high-performing open-source large language model, comparable to GPT-4 in capability. |
+| **Axios** ![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white) | A promise-based HTTP client for the browser and Node.js, used for interacting with backend APIs. |
+| **Zustand** 🐻 | A minimalistic and flexible global state management solution for React apps. |
+| **Vercel** ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white) | Deployment platform used for hosting and serving the app seamlessly. |
+
+---
+## 📁 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+/
+├── app/
+│   ├── api/                # API routes
+│   ├── dashboard/          # Dashboard UI
+│   ├── generate-idea/      # Idea generation screen
+│   ├── remix-story/        # Story remixing UI
+│   ├── structured-content/ # Structured output UI
+│   └── trending/           # Trending topic explorer
+├── lib/                    # AI logic & helper utilities
+├── store/                  # Zustand state management
+├── utils/                  # Custom helpers
+├── public/
+├── package.json
+└── README.md
+
+
+```
+---
+
+## 📍 How It Works
+- User selects a category or pastes a script
+
+- App sends a POST request to /api/generate/idea with a prompt
+
+- Groq + Mixtral AI responds instantly with ideas or structured content
+
+- UI updates using React + Zustand to show results
+
+
+---
+ 
+## 🌐 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. 📥 Clone the repository
+
+```bash
+git clone https://github.com/Parshant1231/MINTFORGEX.git
+cd MINTFORGEX
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. 📦 Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
+### 3. 🔐 Configure environment variables
+Create a .env.local file in the root of the project:
+```bash
+# .env.local
+GROQ_API_KEY=sk-your-groq-api-key-here
 
-To learn more about Next.js, take a look at the following resources:
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. 4. 🚀 Run the dev server
+```bash
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+```
+Now open http://localhost:3000 in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## 🙋 Author
+Made with [❤️](https://github.com/Parshant1231)!
+
+Project:  MINTFORGEX
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+<p align="center">
+  <strong>⭐️ Show Your Support</strong><br/>
+  If you found this project helpful, consider giving it a ⭐️ on GitHub!
+</p>
+
