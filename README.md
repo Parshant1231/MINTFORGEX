@@ -18,16 +18,14 @@ Built with **Next.js App Router**, **TypeScript**, and **Groq's Mixtral AI**, th
 
 ## 🛠️ Tech Stack & Tools
 
-| Tool         | Description |
-|--------------|-------------|
-| **Next.js** ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) | A powerful full-stack React framework used for building modern, performant web applications. |
-| **TypeScript** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) | Provides static typing for JavaScript, improving code reliability and developer experience. |
-| **Tailwind CSS** ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white) | A utility-first CSS framework for building custom designs without writing CSS from scratch. |
-| **Groq AI** ![Groq](https://img.shields.io/badge/Groq_AI-000000?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMu%0D%0Ab3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=) | An ultra-fast LLM inference engine used to power real-time content generation. |
-| **Mixtral-8x7B** 🔮 | A high-performing open-source large language model, comparable to GPT-4 in capability. |
-| **Axios** ![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white) | A promise-based HTTP client for the browser and Node.js, used for interacting with backend APIs. |
-| **Zustand** 🐻 | A minimalistic and flexible global state management solution for React apps. |
-| **Vercel** ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white) | Deployment platform used for hosting and serving the app seamlessly. |
+- ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) **Next.js**
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) **TypeScript**
+- ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white) **Tailwind CSS**
+- ![Groq](https://img.shields.io/badge/Groq-000000?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMu%0D%0Ab3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=) **Groq AI**
+- 🔮 **Mixtral-8x7B**
+- ![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white) **Axios**
+- 🐻 **Zustand**
+- ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white) **Vercel**
 
 ---
 ## 📁 Folder Structure
