@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-Powered Character Creator
 
-## Getting Started
+## 📌 Project Overview
+The AI-Powered Character Creator is a full-stack application that allows users to design unique characters with the help of AI.  
+Users can define traits like appearance, personality, and backstory, and the system will generate a consistent character profile with visuals and narrative details.
 
-First, run the development server:
+---
 
+## 🚀 Key Features
+- **AI-Generated Character Designs**: Uses image generation models for visuals.
+- **Custom Trait Inputs**: Name, personality, background, style, and more.
+- **Story Integration**: Auto-generate backstories and character arcs.
+- **Image Style Options**: Anime, realistic, fantasy, cartoon.
+- **Save & Share**: Store characters and share via unique links.
+- **Export Options**: Download as PNG/JPEG/JSON.
+
+---
+
+## 🛠️ Tech Stack
+**Frontend**  
+- Next.js (App Router, TypeScript, TailwindCSS)  
+- Zustand or Redux for state management  
+
+**Backend**  
+- Node.js with Express.js  
+- OpenAI API (for text generation)  
+- Stability AI / DALL·E (for image generation)  
+
+**Database**  
+- MongoDB with Mongoose (for storing character data)
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
 ```bash
+git clone https://github.com/your-username/ai-character-creator.git
+cd ai-character-creator
+2️⃣ Install dependencies
+bash
+Copy
+Edit
+# Install for frontend
+cd frontend
+npm install
+
+# Install for backend
+cd ../backend
+npm install
+3️⃣ Set up environment variables
+Create .env files in both frontend and backend folders with:
+
+env
+Copy
+Edit
+OPENAI_API_KEY=your_openai_api_key
+STABILITY_API_KEY=your_stability_api_key
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_jwt_secret
+4️⃣ Run the development servers
+bash
+Copy
+Edit
+# Backend
+cd backend
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Frontend
+cd ../frontend
+npm run dev
+📂 Folder Structure
+bash
+Copy
+Edit
+ai-character-creator/
+│
+├── frontend/         # Next.js app
+├── backend/          # Node.js & Express API
+├── README.md         # Project documentation
+└── .gitignore
+🧠 How AI Works in This Project
+User Inputs Traits → Stored in backend.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+AI Text Generation → OpenAI generates backstory and description.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+AI Image Generation → Stability AI / DALL·E creates the visual.
 
-## Learn More
+Combined Output → Both are saved and displayed.
 
-To learn more about Next.js, take a look at the following resources:
+📅 Roadmap
+ Add advanced customization sliders for traits.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ Implement character animations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ Integrate social media sharing.
 
-## Deploy on Vercel
+ Multi-language support.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ AI voice for character introduction.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📝 License
+This project is licensed under the MIT License.
