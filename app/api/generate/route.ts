@@ -1,3 +1,9 @@
+// ================================================================ //
+//  Generate full new content idea (title, script, scene, audio)    //
+// ================================================================ //
+
+
+
 import { AI } from "@/lib/AI";
 import { ideaPrompt } from "@/utils/Prompt";
 import axios from "axios";

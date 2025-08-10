@@ -1,6 +1,6 @@
-// ======================================================== //
-//   User gives idea → generate script, structure, music    //
-// ======================================================== //
+// ====================================================== //
+//   Suggest trending content from web + create similar   //
+// =======================================================//
 
 interface DATADT {
   topic: string;
@@ -8,17 +8,26 @@ interface DATADT {
 }
 
 import { AI } from "@/lib/AI";
-import { structurePrompt } from "@/utils/Prompt";
+import { fetchTrendingShorts } from "@/utils/scraper";
 import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const { topic, mood }: DATADT = await req.json();
-  const prompt = structurePrompt(topic, mood);
-
   try {
-    const result = await AI(prompt);
-    return NextResponse.json({ result });
+    const { keyword } = await req.json();
+
+    if(!keyword) {
+        return NextResponse.json(
+            {error: "Keyword is required"},
+            {status: 400}
+        );
+    }
+
+    const shortsData = await fetchTrendingShorts(keyword);
+    const shortsText = JSON.stringify(shortsData, null, 2);
+    const result = await AI(shortsText);
+
+
   } catch (error: unknown) {
     if (axios.isAxiosError(error)) {
       console.error(

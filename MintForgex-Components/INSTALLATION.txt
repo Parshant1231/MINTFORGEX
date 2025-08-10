@@ -1,0 +1,60 @@
+MINTFORGEX COMPONENTS - INSTALLATION GUIDE
+==========================================
+
+📦 QUICK START:
+
+1. Extract this zip file to your project directory
+
+2. Install required dependencies:
+   npm install lucide-react class-variance-authority clsx tailwind-merge
+
+3. Add fonts to your app/layout.tsx:
+   import { Inter, Poppins } from 'next/font/google'
+   
+   const inter = Inter({
+     subsets: ["latin"],
+     variable: "--font-inter",
+   })
+   
+   const poppins = Poppins({
+     subsets: ["latin"],
+     weight: ["400", "600", "800", "900"],
+     variable: "--font-poppins",
+   })
+
+4. Add font variables to your body className:
+   <body className={`${inter.variable} ${poppins.variable} antialiased`}>
+
+5. Import the CSS in your globals.css:
+   @import './styles/mintforgex.css';
+
+6. Use the component:
+   import MintForgex from './components/MintForgex'
+   
+   export default function Page() {
+     return <MintForgex />
+   }
+
+🎯 FEATURES INCLUDED:
+- Animated morphing titles
+- SVG pencil drawing animation
+- Interactive image gallery with hover effects
+- Parallax grid background
+- Smooth search interactions
+- Fully responsive design
+- TypeScript support
+
+📁 FOLDER STRUCTURE:
+- components/ - React components
+- hooks/ - Custom React hooks
+- types/ - TypeScript interfaces
+- constants/ - Configuration data
+- styles/ - Custom CSS animations
+
+🔧 REQUIREMENTS:
+- Next.js 14+
+- React 18+
+- Tailwind CSS
+- TypeScript (optional but recommended)
+
+For detailed documentation, see README.md
